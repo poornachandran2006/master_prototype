@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import './App.css'
-import MasterApplication from './components/MasterApplication'
+import SlaveApplication from './components/SlaveApplication'
+// import MasterApplication from './components/MasterApplication'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <MasterApplication />
+      {/* <MasterApplication /> */}
+      <SlaveApplication />
     </>
   )
 }
