@@ -241,7 +241,7 @@ const MasterApplication = () => {
               { num: 3, title: 'Escalation if Needed', desc: 'Notify higher authorities (police)', color: 'orange' },
               { num: 4, title: 'Close with Report', desc: 'Document actions taken and outcome', color: 'purple' }
             ].map((step, idx) => (
-              <div key={idx} className={`flex items-center space-x-3 p-3 bg-${step.color}-900/20 rounded-xl border border-${step.color}-500/30 hover:scale-105 transition-all duration-300 animate-fadeInUp`} style={{ animationDelay: `${idx * 100}ms` }}>
+              <div key={idx} className={`flex items-center space-x-3 p-4 bg-${step.color}-900/20 rounded-xl border border-${step.color}-500/30 hover:scale-105 transition-all duration-300 animate-fadeInUp`} style={{ animationDelay: `${idx * 100}ms` }}>
                 <div className={`w-7 h-7 sm:w-8 sm:h-8 bg-gradient-to-br from-${step.color}-600 to-${step.color}-700 text-white rounded-full flex items-center justify-center text-xs sm:text-sm font-medium flex-shrink-0 shadow-lg`}>{step.num}</div>
                 <div className="flex-1 min-w-0">
                   <div className="font-medium text-slate-200 text-sm sm:text-base">{step.title}</div>
