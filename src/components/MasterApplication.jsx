@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Shield, 
   Users, 
@@ -27,6 +27,10 @@ const MasterApplication = () => {
   const [userRole, setUserRole] = useState('Police');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(true);
+
+  useEffect(() => {
+    document.title = 'SacredBytes';
+  }, []);
 
   const navItems = [
     { id: 'dashboard', label: 'Dashboard', icon: Activity },
